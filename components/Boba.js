@@ -3,6 +3,8 @@ import * as THREE from 'three';
 
 function Boba() {
   const component = new THREE.Object3D();
+
+const scene = new THREE.Scene();
 //Boba
 function Boba() {
   const bobaMetry = new THREE.SphereGeometry(0.15, 20, 18);

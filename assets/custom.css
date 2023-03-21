@@ -60,6 +60,7 @@ header {
     width: 100%;
     max-width: 1240px;
     margin: auto;
+    padding: 0 10px;
 }
 .digital {
     font-family: "Font-Digital";
@@ -75,8 +76,17 @@ header {
     text-shadow: 3px 2px 10px #000000c2;
 }
 .sisikiri p {
-  z-index: 13;
+  pointer-events: painted;
   cursor: pointer !important;
+}
+
+.gantiBg {
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  margin: 10px;
+  right: 0;
+  z-index: 10;
 }
 
 #webGL {

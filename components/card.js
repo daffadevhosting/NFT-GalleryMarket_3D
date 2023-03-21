@@ -1,9 +1,10 @@
 import '../assets/custom.css'
 import * as THREE from 'three';
-import { TWEEN } from 'three/addons/libs/tween.module.min.js';
+import { TWEEN } from 'three/examples/jsm/libs/tween.module.min.js';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
-import { CSS3DRenderer, CSS3DObject } from 'three/addons/renderers/CSS3DRenderer.js';
+import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js';
+import { CSS3DRenderer, CSS3DObject } from 'three/examples/jsm/renderers/CSS3DRenderer.js';
+import BobaBoba from './Boba';
 
 
 function Card() {
@@ -112,6 +113,9 @@ for ( let i = 0; i < objects.length; i ++ ) {
 					object.position.z = ( Math.floor( i / 5 ) ) * 1000 - 2000;
 
 					tujuan.grid.push( object );
+
+const BolaBola = new BobaBoba();
+scene.add(BolaBola);
 				}
 
 				//

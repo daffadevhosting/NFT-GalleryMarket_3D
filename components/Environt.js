@@ -99,11 +99,27 @@ dnoise: { type: 'f', value: 0.0 },
 psize: { type: 'f', value: 3.0 }
 }
 
-var options = { perlin: { time: 2.0, morph: 20, dnoise: 0.5 },
+var options = {
+  perlin: { time: 2.0, morph: 20, dnoise: 0.5 },
   chroma: { RGBr: 0.0, RGBg: 0.0, RGBb: 3.0, RGBn: 0.3, RGBm: 5.0 },
   camera: { zoom: 250, speedY: 0.2, speedX: 0.0, guide: false },
   sphere: { wireframe: false, points: false, psize: 2 }
 }
+const sphereOptions = options.sphere;
+
+function toggleProperties() {
+  sphereOptions.wireframe = !sphereOptions.wireframe;
+  sphereOptions.points = !sphereOptions.points;
+  console.log("Wireframe:", sphereOptions.wireframe);
+  console.log("Points:", sphereOptions.points);
+}
+
+const btnToggle = document.createElement("button");
+btnToggle.className = "gantiBg";
+btnToggle.textContent = "Toggle Canvas";
+btnToggle.onclick = toggleProperties;
+
+document.body.appendChild(btnToggle);
 
 function gantiBG() {
   console.log('indehoy asaleho');
