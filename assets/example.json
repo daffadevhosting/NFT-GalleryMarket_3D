@@ -1,0 +1,15 @@
+[
+  {
+  "image": "/textures/img/0001.png",
+  "text": "Hello, world!",
+  "color": "0xFFFFFF",
+  "font": "/fonts/MSDF/SairaSemiCondensed-SemiBold-msdf.json"
+},
+{
+  "image": "/textures/img/0002.png",
+  "text": "Hello, world!",
+  "color": "0xFFFFFF",
+  "font": "/fonts/MSDF/SairaSemiCondensed-SemiBold-msdf.json"
+}
+]
+

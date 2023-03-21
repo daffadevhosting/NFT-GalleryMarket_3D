@@ -1,0 +1,23 @@
+{
+  "name": "daffadev_my_id",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0"
+  },
+  "dependencies": {
+    "@thirdweb-dev/sdk": "^3.10.3",
+    "draco3dgltf": "^1.5.6",
+    "ethers": "^5.7.2",
+    "gsap": "^3.11.5",
+    "three": "^0.150.1",
+    "three-mesh-ui": "^6.5.3",
+    "troika-three-text": "^0.47.1"
+  }
+}
