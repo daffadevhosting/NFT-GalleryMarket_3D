@@ -8,4 +8,4 @@
  - Thirdweb
  - OpenZeppelin
 
-<img src="./d0ea11ac-25da-4c6b-8f9b-1cb7d1b9abb5.png" alt="3D-web" style="width:100%;"/>
+<img src="./preview.png" alt="3D-web" style="width:100%;"/>
