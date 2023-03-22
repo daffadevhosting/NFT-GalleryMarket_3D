@@ -48,7 +48,6 @@ function init() {
 	camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 1, 10000 );
 	camera.position.z = 2500;
 	scene = new THREE.Scene();
-
 				// Gallery
 
 for ( let i = 0; i < datatable.length; i += 5 ) {
@@ -177,10 +176,10 @@ new TWEEN.Tween( this )
 
 function onWindowResize() {
 
-const width = canvas.clientWidth;
-const height = canvas.clientHeight;
+const width = window.clientWidth;
+const height = window.clientHeight;
 
-	if ( canvas.width !== width || canvas.height !== height ) {
+	if ( window.width !== width || window.height !== height ) {
 
 		renderer.setSize( width, height, true );
 	}

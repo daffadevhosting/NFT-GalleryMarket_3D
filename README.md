@@ -3,9 +3,11 @@
 [Preview - TestNet](https://nft-gallerymarket-3d.on.fleek.co)
 
 ### Tech
+ - Vite
  - Three JS
  - Vanilla JS
  - Thirdweb
  - OpenZeppelin
 
 <img src="./preview.png" alt="3D-web" style="width:100%;"/>
+<img src="./Screenshot.png" alt="3D-web" style="width:100%;"/>

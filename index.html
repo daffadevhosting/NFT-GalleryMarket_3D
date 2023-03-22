@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
@@ -10,21 +10,12 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="nav">
-        <div class="sisikanan">
-          <h2 class="digital">NFT GALLERY</h2>
-        </div>
-        <div class="sisikiri">
-          <p role="button">Sign Wallet</p>
-        </div>
-      </div>
-    </header>
-		<canvas id="webGL"></canvas>
+    <canvas id="webGL"></canvas>
     <div id="root"></div>
     <div id="menu"></div>
     <p class="title">Selamat Datang</p>
     <script type="module" src="./webGL.js"></script>
+    <script type="module" src="./src/main.jsx"></script>
 <script id="vertexShader" type="x-shader/x-vertex">
   void main() {
     gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );

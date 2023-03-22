@@ -1,14 +1,26 @@
-import './assets/custom.css'
+import './src/assets/custom.css'
 import * as THREE from 'three';
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import { TWEEN } from 'three/addons/libs/tween.module.min.js'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import {Text} from 'troika-three-text'
-import CardGallery from './components/card'
-import Background from './components/Environt'
+import CardGallery from './src/components/card'
+import Background from './src/components/Environt'
 
 
-import FontJSON from './assets/font/Techno-msdf.json';
-import FontImage from './assets/font/Techno.png';
+import FontJSON from './src/assets/font/Techno-msdf.json';
+import FontImage from './src/assets/font/Techno.png';
+
+function Login() {
+	const address = useAddress();
+  const networkMismatch = useNetworkMismatch();
+  const [, switchNetwork] = useNetwork();
+  
+  const connectWithMetamask = useMetamask();
+  const connectWithWalletConnect = useWalletConnect();
+  const connectWithCoinbaseWallet = useCoinbaseWallet();
+  const disconnectWallet = useDisconnect();
+}
 
 //Scene 
 const scene = new THREE.Scene();
