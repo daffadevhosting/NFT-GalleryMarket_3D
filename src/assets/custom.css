@@ -116,7 +116,6 @@ header {
   height: var(--card-height);
   position: relative;
   border-radius: 8px;
-  cursor: pointer;
   box-shadow: 0px 0px 12px rgb(255,152,1,0.5);
   border: 2px solid rgb(255,152,1,0.25);
   display: flex;
@@ -205,6 +204,39 @@ header {
   transform: translate3d(0%, -50px, 100px);
   z-index: -1;
   transform-style: preserve-3d;
+}
+
+.boxBtn {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.5em 1em;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #FF5722;
+  box-shadow: 0 0 15px -2px #ff6a00;
+  color: #FFF;
+  cursor: pointer;
+  position: absolute;
+  text-decoration: none;
+  right: 0;
+  bottom: 0;
+  margin: 10px;
+  opacity: -1;
+  animation: fadeIt ;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover .boxBtn {
+    opacity: 1;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes fadeIt {
+  0% { opacity: 0; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
 }
 
 .character {

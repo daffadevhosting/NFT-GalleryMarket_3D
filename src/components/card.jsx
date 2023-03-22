@@ -52,10 +52,11 @@ function init() {
 
 for ( let i = 0; i < datatable.length; i += 5 ) {
 
+
     const element = document.createElement( 'div' );
 					element.className = 'card';
 					element.style.backgroundColor = 'rgba(251, 26,10,' + ( Math.random() * 0.5 + 0.25 ) + ')';
-					element.material = latarBg;
+
     const wrapper = document.createElement( 'div' );
                     wrapper.className = 'wrapper';
                     element.appendChild( wrapper );
@@ -74,6 +75,13 @@ for ( let i = 0; i < datatable.length; i += 5 ) {
 					details.className = 'title';
 					details.innerHTML = datatable[ i + 1 ] + '<br>' + datatable[ i + 2 ];
 					element.appendChild( details );
+
+    const trigger = document.createElement( 'a' );
+                    trigger.role = 'button';
+                    trigger.className = 'boxBtn';
+                    trigger.innerHTML = 'BUY'
+                    trigger.href = '#nftId';
+                    element.appendChild( trigger );
 
     const character = document.createElement( 'img' );
 					character.className = 'character';

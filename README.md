@@ -5,7 +5,7 @@
 ### Tech
  - Vite
  - Three JS
- - Vanilla JS
+ - React JS
  - Thirdweb
  - OpenZeppelin
 

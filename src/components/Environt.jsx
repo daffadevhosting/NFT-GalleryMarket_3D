@@ -9,7 +9,7 @@ function Background() {
 // Three JS
 window.addEventListener('load', init, false);
 function init() {
-  console.log('Fungsi Init');
+  console.log('Fungsi Init: OK');
   createWorld();
   createLights();
   createGrid();
@@ -56,7 +56,7 @@ function createWorld() {
   document.body.appendChild(renderer.domElement);
   //---
   window.addEventListener('resize', onWindowResize, false);
-  console.log('Membuat DuniaBaru');
+  console.log('Membuat DuniaBaru: OK');
 }
 function onWindowResize() {
   _width = window.innerWidth;
@@ -84,7 +84,7 @@ function createLights() {
   scene.add(_rectAreaLight);
   scene.add(_frontlight);
   //scene.add(_rectAreaLightHelper);
-  console.log('Pencahayaan');
+  console.log('Pencahayaan: OK');
 }
 
 var uniforms = {
@@ -103,7 +103,7 @@ var options = {
   perlin: { time: 2.0, morph: 20, dnoise: 0.5 },
   chroma: { RGBr: 0.0, RGBg: 0.0, RGBb: 3.0, RGBn: 0.3, RGBm: 5.0 },
   camera: { zoom: 250, speedY: 0.2, speedX: 0.0, guide: false },
-  sphere: { wireframe: false, points: false, psize: 2 }
+  sphere: { wireframe: true, points: true, psize: 2 }
 }
 const sphereOptions = options.sphere;
 
@@ -112,6 +112,7 @@ function toggleProperties() {
   sphereOptions.points = !sphereOptions.points;
   console.log("Wireframe:", sphereOptions.wireframe);
   console.log("Points:", sphereOptions.points);
+  console.log('indehoy asaleho meuleunoy');
 }
 
 const btnToggle = document.createElement("button");
@@ -122,7 +123,6 @@ btnToggle.onclick = toggleProperties;
 document.body.appendChild(btnToggle);
 
 function gantiBG() {
-  console.log('indehoy asaleho');
   
   TweenMax.to(options.perlin, 1, {morph: Math.random() * 20});
   TweenMax.to(options.perlin, 2, {time: 1 + Math.random() * 4});
