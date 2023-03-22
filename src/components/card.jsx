@@ -80,7 +80,7 @@ for ( let i = 0; i < datatable.length; i += 5 ) {
                     trigger.role = 'button';
                     trigger.className = 'boxBtn';
                     trigger.innerHTML = 'BUY'
-                    trigger.href = '#nftId';
+                    trigger.href = '/nft[nftId]';
                     element.appendChild( trigger );
 
     const character = document.createElement( 'img' );
